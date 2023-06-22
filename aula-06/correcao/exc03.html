@@ -1,0 +1,15 @@
+<script>
+  let total = 0;
+  let quantidade = Number(prompt("Digite a quantidade de maçãs que deseja comprar: "));
+
+  while (quantidade > 0) {
+    total += quantidade * 0.3;
+    quantidade = Number(prompt ("Digite a quantidade de maçãs que deseja comprar(0 para sair)"));
+  }
+
+  document.write(`O total é: R$${total.toFixed(2)}`);
+
+
+</script>
+
+

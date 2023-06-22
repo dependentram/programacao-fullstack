@@ -1,0 +1,34 @@
+<script>
+
+    class Pessoa {
+        constructor(nome, sobrenome, idade) {
+            this.nome = nome;
+            this.sobrenome = sobrenome;
+            this.idade = idade;
+
+
+        };
+    };
+
+    const pessoas = [];
+
+    while (true) {
+        const nome = prompt("digite um nome");
+        const sobrenome = prompt("digite um sobrenome");
+        const idade = prompt("digite uma idade");
+
+        const pessoa = new Pessoa(nome, sobrenome, idade);
+
+        pessoas.push(pessoa);
+
+        const continuar = prompt("Deseja continuar adicionando?(s/n)").toLowerCase();
+
+        if (continuar === "n") {
+            break;
+        };
+
+    };
+
+    console.log(pessoas);
+
+</script>

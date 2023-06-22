@@ -1,0 +1,63 @@
+<script>
+  let num1 = Number(prompt("Digite o primeiro número:"));
+  let num2 = Number(prompt("Digite o segundo número:"));
+  const operador = prompt("Digite o operador:");
+
+  // ⬇️ ⬇️ ⬇️ ⬇️ Funções declaradas com a funções anonimas e arrow function => ⬇️ ⬇️ ⬇️ ⬇️
+  const somar = (n1, n2) => n1 + n2;
+  const subtrair = (n1, n2) => n1 - n2;
+  const multiplicar = (n1, n2) => n1 * n2;
+  const dividir = (n1, n2) => n1 / n2;
+  const descobrirRestoDaDivisao = (n1, n2) => n1 % n2;
+
+  switch (operador) {
+    case "+":
+      alert(somar(num1, num2));
+      break;
+
+    case "-":
+      alert(subtrair(num1, num2));
+      break;
+
+    case "*":
+      alert(multiplicar(num1, num2));
+      break;
+
+    case "/":
+      alert(dividir(num1, num2));
+      break;
+
+    case "%":
+      alert(descobrirRestoDaDivisao(num1, num2));
+      break;
+
+    default:
+      alert("Operador não foi reconhecido");
+  }
+
+  // ⬇️ ⬇️ ⬇️ ⬇️ Funções declaradas com a palavra reservada "function" ⬇️ ⬇️ ⬇️ ⬇️
+  /*
+    function somar(n1, n2) {
+      return n1 + n2
+    }
+
+    function subtrair(n1, n2) {
+      return n1 - n2
+    }
+
+    function multiplicar(n1, n2) {
+      return n1 * n2
+    }
+
+    function dividir(n1, n2) {
+      return n1 / n2
+    }
+
+    function descobrirRestoDaDivisao(n1, n2) {
+      return n1 % n2
+    }
+
+  */
+
+
+</script>
