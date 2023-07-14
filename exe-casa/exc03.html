@@ -1,0 +1,15 @@
+<script>
+
+function Livro(titulo, autor, ano) {
+
+    this.titulo = titulo;
+    this.autor = autor;
+    this.ano = ano;
+
+};
+ 
+const livro = new Livro("O Pequeno Príncipe", "Antoine de Saint-Exupéry", 1943); 
+ 
+livro.exibirDados(console.log(`titulo:${livro.titulo} autor:${livro.autor}`));
+
+</script>

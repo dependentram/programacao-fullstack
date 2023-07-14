@@ -1,0 +1,11 @@
+1 - abro a porta
+2 - entro no banheiro 
+3 - pego a minha escova 
+4 - pego a pasta de dentes 
+5 - abro a pasta de dentes 
+6 - coloco a pasta de dentes na minha escova
+7 - coloco a escova de dentes na minha boca 
+8 - escovo meus dentes
+9 - enxaguo com agua a minha boca 
+10 - depois lavo a minha escova de dentes
+11 - jogo a agua que estava na minha boca fora

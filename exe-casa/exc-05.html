@@ -1,0 +1,22 @@
+<script>
+
+  class Produto {
+    constructor(nome, preco) {
+      this.nome = nome;
+      this.preco = preco;
+    };
+
+    exibirNome() {
+      console.log(`O nome do produto é ${this.nome}`);
+    };
+
+    exibirPreco() {
+      console.log(`O preço do produto é R$ ${this.preco.toFixed(2)}`);
+    };
+  };
+
+  const produto1 = new Produto("Camiseta", 29.90);
+  produto1.exibirNome();
+  produto1.exibirPreco();
+
+</script>

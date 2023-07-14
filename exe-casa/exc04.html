@@ -1,0 +1,32 @@
+<script>
+
+    class ContaBancaria {
+        constructor(titular, saldoInicial) {
+            this.titular = titular;
+            this.saldoInicial = saldoInicial;
+        };
+
+        depositar(valor) {
+            this.saldo += valor;
+            console.log(`Depósito de R$${valor} realizado. Novo saldo: R$${this.saldo}`);
+        };
+
+        sacar(valor) {
+            if (valor > this.saldo) {
+                console.log(`Saldo insuficiente para realizar saque de R$${valor}. Saldo atual: R$${this.saldo}`);
+            } else {
+                this.saldo -= valor;
+                console.log(`Saque de R$${valor} realizado. Novo saldo: R$${this.saldo}`);
+            };
+        };
+
+        exibirSaldo() {
+            console.log(`Saldo atual da conta de ${this.titular}: R$${this.saldo}`);
+        };
+    };
+
+    const conta = new ContaBancaria("pedro", 1000);
+
+    conta.depositar(500); conta.sacar(200); conta.exibirSaldo();
+
+</script>

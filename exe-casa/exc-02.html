@@ -1,0 +1,22 @@
+<script>
+
+    class Animal {
+        constructor() { this.nome = ""; this.especie = ""; }
+
+        definirNome(nome) { this.nome = nome; }
+
+        definirEspecie(especie) { this.especie = especie; }
+
+        exibirDados() { console.log(`Nome: ${this.nome}`); console.log(`Espécie: ${this.especie}`); }
+    }
+
+    const animal = new Animal();
+
+    animal.definirNome("Rex");
+
+    animal.definirEspecie("Cachorro");
+
+    animal.exibirDados();
+
+
+</script>

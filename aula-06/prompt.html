@@ -1,0 +1,20 @@
+<script>
+  // const teste = "Olá HTML!";
+  // const nome = prompt("Digite o seu nome: ");
+
+  const num1 = Number(prompt("Digite o primeiro número: "));
+
+  const num2 = Number(prompt("Digite o segundo número: "));
+
+  // document.write(num1 + num2);
+
+  alert(num1 + num2);
+
+  function update() {
+    let cursors = this.input.keyboard.createCursorKeys();
+    if ((cursors.left.isDown || this.a.isDown) || (cursors.right.isDown || this.d.isDown)) this.player.setVelocityX(cursors.left.isDown || this.a.isDown ? -160 : 160);
+    else this.player.setVelocityX(0);
+    if ((cursors.up.isDown || this.w.isDown) || (cursors.down.isDown || this.s.isDown)) this.player.setVelocityY(cursors.up.isDown || this.w.isDown ? -160 : 160);
+    else this.player.setVelocityY(0);
+  }
+</script>
