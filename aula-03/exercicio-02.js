@@ -11,4 +11,8 @@ if (media >= 7) {
     console.log("reprovado");
 } else {
     console.log("recuperação");
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> 9e196674cff022412eacd57deb216b6dbeabf82c
