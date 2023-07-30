@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+#principal {
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.secundaria {
+    width: 100px;
+    height: 100px;
+    color: yellow;
+    position:absolute;
+    left: 100px;
+}

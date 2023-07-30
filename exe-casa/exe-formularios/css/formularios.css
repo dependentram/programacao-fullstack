@@ -1,0 +1,9 @@
+
+#input > * {
+    height: 1.3em;
+    float: left;
+  }
+  
+  #input img {
+    cursor: pointer;
+  }

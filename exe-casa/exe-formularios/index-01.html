@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+
+<link rel="stylesheet" href="./css/formularios.css">
+<style>
+    h1 {
+    color:#282828;
+    }
+    p {
+    color:#282828;
+    }
+    </style>
+    
+
+</head>
+<body>
+    <h1>Formulário de contato</h1>
+
+    <p></p>
+
+    <h3>Insira seus dados abaixo:</h3>
+
+    <main>
+
+        <form a style="color: red;">
+        
+            <label for="nome"> Nome:</label> <br>
+            <input type="text" name="nome" id="nome"> <br>
+            <p></p>
+
+            <label for="email"> E-mail:</label> <br>
+            <input type="text" name="email" id="email"> <br>
+            <p></p>
+
+           <label for="senha">Senha:</label> <br>
+            <label for="senha" id="input">
+                <input type="password" name="senha" id="senha" >
+                <img src="https://i.stack.imgur.com/H9Sb2.png" alt="">
+            </label> <br>
+            <p></p>
+
+            <label for="mensagem"> Mensagem:</label> <br>
+            <input type="text" name="mensagem" id="mensagem"> <br>
+            <p></p>
+
+            <label for="idade"> Idade:</label> <br>
+            <input type="number" name="idade" id="idade" min="1" max="120"> <br>
+            <p></p>
+            
+            <label>Selecione um gênero:</label> <br>
+            
+            <input type="radio" id="masc" name="sexo" value="Masculino"/>
+            <label for="masc">Masculino</label> <br>
+            
+            <input type="radio" id="fem" name="sexo" value="Feminino"/>
+            <label for="fem">Feminino</label><br>
+            <p></p>
+            
+            <label for="data"> Data:</label> <br>
+            <input type="date" name="data" id="data"> <br>
+            <p></p>
+            
+            <label for="arquivo">Enviar arquivo:</label> <br>
+            <input type="file" name="arquivo" id="arquivo"> <br>
+            <p></p>
+
+            <label for="receber_notificacoes">Receber notificações:</label>
+            <input type="checkbox" id="receber_notificacoes" name="receber_notificacoes" checked><br>
+            <p></p>
+
+            <input type="hidden" id="campo_oculto" name="campo_oculto" value="valor_predefinido">
+            <p></p>
+
+            <label for="cor">Selecionar cor:</label>
+            <input type="color" id="cor" name="cor"><br>
+            <p></p>
+
+            <label for="email-2">E-mail:</label> <br>
+            <input type="text" id="email-2" name="email" placeholder="Digite seu e-mail"><br>
+            <p></p>
+
+            <label>Escolha sua linguagem de programação preferida:</label><br>
+            
+            <label for="java">
+                <input type="radio" id="java" name="linguagem" value="java"> Java
+            </label><br>
+            <label for="python">
+                <input type="radio" id="python" name="linguagem" value="python"> Python
+            </label><br>
+            <label for="javascript">
+                <input type="radio" id="javascript" name="linguagem" value="javascript"> JavaScript
+            </label><br>
+            <label for="html">
+                <input type="radio" id="html" name="linguagem" value="html"> Html
+            </label><br>
+            <p></p>
+
+            <label for="altura">Insira a sua altura (em centímetros):</label>
+            <input type="number" id="altura" name="altura" min="100" max="300"/><br>
+            <p></p>
+
+            <input type="submit" value="Enviar">
+            
+            <h2>Login</h2>
+
+            <form>
+                <label for="nome2">Nome:</label><br>
+                <input type="text" id="nome2" name="nome"><br>
+
+                <label for="sobrenome2">Sobrenome:</label><br>
+                <input type="text" id="sobrenome2" name="sobrenome"><br>
+  
+                <label for="login2">Login:</label><br>
+                <input type="text" id="login2" name="login"><br>
+
+                <label for="senha2">Senha:</label><br>
+                <input type="password" id="senha2" name="senha"><br>
+                <p></p>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+
+        
+        </form>
+
+    </main>
+    
+<script src="./script/formularios.script.js"></script>
+
+</body>
+</html>

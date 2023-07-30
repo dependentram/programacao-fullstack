@@ -1,0 +1,17 @@
+.styled-button {
+background-color: orange;
+color: white;
+border: none;
+border-radius: 8px;
+padding: 12px 20px;
+cursor: pointer;
+transition: background 0.3s;
+font-size: 15px;
+font-weight: 600;
+}
+
+.styled-button:hover {
+    background-color: darkorange;
+    border: solid black 1.5px;
+
+}    
