@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header#header,
+footer#footer {
+  width: 100vw;
+}
+
+header#header nav#menu,
+footer#footer {
+  padding: 20px 0;
+  background-color: #151515;
+}
+
+header#header nav#menu,
+footer#footer {
+  display: flex;
+  justify-content: center;
+}
+
+header#header section#main-title {
+  width: 100vw;
+  height: 400px;
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgb(139, 139, 139) url("../../assets/img/posrio-banner.jpg") no-repeat 100%;
+  background-size: cover;
+  color: #fff;
+}
+
+header#header section#main-title h1 {
+  display: none;
+}
+
+header#header nav#menu ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+header#header nav#menu ul li a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header#header nav#menu ul li a:active,
+header#header nav#menu ul li a:link,
+header#header nav#menu ul li a:visited {
+  color: #fff;
+}
+
+footer#footer p {
+  color: #FFF;
+}

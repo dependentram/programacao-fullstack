@@ -8,7 +8,7 @@ box-sizing: border-box;
 
 #principal {
     width: 600px;
-    height: 600px;
+    height: 2000px;
     background-color: red;
     margin: auto;
     margin-top: 50px;
@@ -18,6 +18,8 @@ box-sizing: border-box;
     width: 100px;
     height: 100px;
     background-color: yellow;
-    position:absolute;
-    left: 100px;
+    position:sticky;
+    right: 0;
+    bottom: 160px;
 }
+
