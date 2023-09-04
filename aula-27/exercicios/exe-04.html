@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div estilizada</title>
+
+    <style>
+        
+    </style>
+
+</head>
+<body>
+    
+    <button id="createDivButton">Criar Div Estilizada</button>
+    <div id="divContainer"></div>
+
+</body>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const btn = document.getElementById("createDivButton");
+    const divContainer = document.getElementById("divContainer");
+    
+    const criarDiv = () => {
+    const div = document.createElement("div");
+    div.style.width = "300px";
+    div.style.height = "300px";
+    div.style.backgroundColor = "red";
+    div.style.borderRadius = "10px";
+    divContainer.appendChild(div);
+   
+    };
+
+    btn.addEventListener('click', criarDiv);
+
+});
+
+</script>
+
+</html>

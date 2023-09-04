@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar paragrafo</title>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+    
+<textarea id="paragraphInput" cols="50" rows="4" placeholder="Digite seu parágrafo aqui"></textarea>
+<button id="addButton">Adicionar Parágrafo</button>
+<div id="responseDiv"></div>
+
+</body>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+        const paragraphInput = document.getElementById('paragraphInput');
+        const addButton = document.getElementById('addButton');
+        const responseDiv = document.getElementById('responseDiv');
+
+        function renderParagraph () {
+            const paragraph = document.createElement("p");
+            paragraph.innerText = paragraphInput.value;
+            responseDiv.innerHTML = "";
+
+            responseDiv.appendChild(paragraph);
+        };
+
+        addButton.addEventListener('click', renderParagraph);
+
+});
+
+</script>
+
+</html>

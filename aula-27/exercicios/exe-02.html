@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar cor da caixa</title>
+
+    <style>
+
+        #square {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="square"></div>
+    <button id="changeColorButton">Mudar cor de fundo</button>
+
+</body>
+
+<script>
+
+ document.addEventListener("DOMContentLoaded", () => {
+
+    const square = document.getElementById("square");
+    const btn = document.getElementById("#changeColorButton");
+
+
+    const changeColor = () => {
+        square.style.backgroundColor = "red";
+    };
+
+    changeColorButton.addEventListener('click', changeColor);
+
+ });
+
+</script>
+
+</html>

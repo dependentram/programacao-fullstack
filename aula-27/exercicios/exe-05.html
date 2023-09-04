@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrados dinâmicos</title>
+
+    <style>
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 20px;
+    }
+
+    .input-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #quantityInput {
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    #createSquaresButton {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    #createSquaresButton:hover {
+        background-color: #0056b3;
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <input type="number" id="quantityInput" placeholder="Digite a quantidade">
+    <button id="createSquaresButton">Criar quadrados</button>
+    <div id="squaresContainer"></div>
+</body>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+    const btn = document.getElementById("createSquaresButton");
+    const divContainer = document.getElementById("squaresContainer");
+    const quantity = parseInt(quantityInput.value);
+
+    const renderSquare = () => {
+
+        const quantityInput = document.getElementById("quantityInput");
+        const quantity = parseInt(quantityInput.value);
+        
+        if (quantity) {
+            for (let i = 0; i < quantity; i++) {
+            const div = document.createElement("div");  
+            div.style.width = "150px";
+            div.style.height = "150px";
+            div.style.margin = "10px";
+            div.style.display = "inline-block";
+            div.style.backgroundColor = "green";
+            divContainer.appendChild(div);
+            };
+        };
+    };
+
+    btn.addEventListener('click', renderSquare);
+
+});
+
+</script>
+
+</html>

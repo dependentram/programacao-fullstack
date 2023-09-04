@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar imagem</title>
+
+    <style>
+        
+    </style>
+
+</head>
+<body>
+
+    <input type="text" id="imageUrlINput" placeholder="Digite a URL da imagem">
+    <button id="createImageButton">Criar Imagem</button>
+    <div id="imageContainer"></div>
+    
+</body>
+
+<script>
+
+     document.addEventListener("DOMContentLoaded", () => {
+
+        const url = document.getElementById("imageUrlINput");
+        const btn = document.getElementById("createImageButton");
+        const image = document.getElementById("imageContainer");
+
+    const criarImagem = () => {
+            const img = document.createElement("img");
+            img.src = url.value;
+            image.appendChild(img);
+        };
+
+        btn.addEventListener('click', criarImagem);
+
+     });
+
+</script>
+
+</html>
