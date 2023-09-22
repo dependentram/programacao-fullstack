@@ -6,4 +6,4 @@ if (idade >= 60) {
     console.log("é adulto");
 }else {
     console.log("é adolescente");
-}
+};
