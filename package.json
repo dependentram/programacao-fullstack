@@ -1,0 +1,11 @@
+{
+  "name": "deveres-vscode",
+  "version": "1.0.0",
+  "description": "- Este é o repositório do curso de programação",
+  "main": "asyncAwait-05.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Igor Cantalejo",
+  "license": "ISC"
+}
